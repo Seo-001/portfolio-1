@@ -4,7 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SHW Portfolio</title>
+    <meta name="description" content="Portfoloi for sofrware engineer shw" />
+    <meta name="author" content="shw" />
+    <link rel="icon" type="image/png" href="portfolio-imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/40e16d5a83.js"
+      `
+      crossorigin="anonymous"
+      `
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <!--Navbar-->
@@ -32,8 +49,83 @@
     <h1 class="home__title">Hello, <br />I'm Seo Hae Won</h1>
     <h2 class="home__description">도전하는 프론트엔드 개발자</h2>
     <button class="home__contact">CONTACT ME</button>
-    <!--About-->
-    <section id="about"></section>
+
+    <!--About 공통된부분이라서 home 처럼 class 안함-->
+    <section id="about">
+      <h1>About Me</h1>
+      <p>바이오 경력에서 쌓은 것을 바탕으로 새로운 도전을 하고자 합니다.</p>
+      <!-- 3개를 한꺼번에 묶기 위해 아래about__majors과 같이 만듦 -->
+      <div class="about__careers">
+        <div class="career">
+          <div class="career__icon">
+            <img
+              src="portfolio-imgs/jobs/sk케미칼.jpg"
+              alt="sk케미칼"
+              class="job__icon"
+            />
+          </div>
+          <div class="career__title">sk케미칼</div>
+          <div class="career__description">연구소_백신팀, QC</div>
+        </div>
+        <div class="career">
+          <div class="career__icon">
+            <img
+              src="portfolio-imgs/jobs/목암생명과학연구소_영문_A_CI.jpg"
+              alt="목암생명과학연구소"
+              class="job__icon"
+            />
+          </div>
+          <div class="career__title">목암생명과학연구소</div>
+          <div class="career__description">
+            연구소_수두백신팀, 세포배양, 공장적용을 위한 Scale up
+          </div>
+        </div>
+        <div class="career">
+          <div class="career__icon">
+            <img
+              src="portfolio-imgs/jobs/코아스템.jpg"
+              alt="코아스템"
+              class="career__icon"
+            />
+          </div>
+          <div class="career__title">코아스템</div>
+          <div class="career__description">공장_생산팀, 줄기세포배양</div>
+        </div>
+        <div class="career">
+          <div class="career__icon">
+            <img
+              src="portfolio-imgs/jobs/동물세포실증지원센터.jpg"
+              alt="동물세포실증지원센터"
+              class="career__icon"
+            />
+          </div>
+          <div class="career__title">동물세포실증지원센터</div>
+          <div class="career__description">
+            공장_제조팀, 공장설비구축, 계약준비 진행, 백신제조
+          </div>
+        </div>
+      </div>
+      <div class="about__school">
+        <div class="school">
+          <img
+            src="portfolio-imgs/school/한국폴리텍바이오대학.jpg"
+            alt="한국폴리텍바이오대학"
+            class="school__logo"
+          />
+          <p class="school__name">한국폴리텍바이오대학, 배양공정학과</p>
+          <p class="school__period">2009.03 ~ 2011.02</p>
+        </div>
+        <div class="jobs">
+          <img
+            src="portfolio-imgs/school/방통대.jpg"
+            alt="한국방송통신대학교"
+            class="school__logo"
+          />
+          <p class="school__name">한국방송통신대학교, 영어영문학과</p>
+          <p class="school__period">2016.09 ~ 2020.08</p>
+        </div>
+      </div>
+    </section>
     <!--Skill-->
     <section id="skills"></section>
     <!--Work-->
@@ -44,3 +136,7 @@
     <section id="contact"></section>
   </body>
 </html>
+
+<!--  css 구글 폰트 
+//font-family: 'Nanum Pen Script', cursive;
+font-family: 'Open Sans', sans-serif; -->
