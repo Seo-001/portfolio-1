@@ -29,6 +29,9 @@
 
   /* Size */
   --size-border-radius: 4px;
+
+  /*Animation duration*/
+  --animation-duration: 300ms;
 }
 
 /*Universal tags */
@@ -144,4 +147,81 @@ P {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+section {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__careers {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px, 0;
+}
+
+.career {
+  flex-basis: 25%;
+}
+
+.career__icon {
+  width: 170px;
+  height: 170px;
+  margin: auto;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.job__icon {
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.career__icon .job__icon {
+  transition: all, var(--animation-duration) ease;
+}
+
+.career__icon:hover .job__icon {
+  transform: rotate(-30deg) scale(1.2);
+}
+
+.career__title,
+.career__description {
+  color: var(--color-dark-grey);
+  font-size: var(--font-small);
+}
+
+.school {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.school__logo {
+  width: 20%;
+  height: 20%;
+  margin-right: 16px;
+}
+
+.school__description {
+  text-align: left;
+  color: var(--color-light-grey);
+}
+
+.school__name {
+  font-size: var(--font-small);
+}
+
+.school__period {
+  font-size: var(--font-micro);
 }
