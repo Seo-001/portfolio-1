@@ -210,11 +210,15 @@ section {
 .school__logo {
   width: 20%;
   height: 20%;
-  margin-right: 16px;
 }
 
 .school__description {
+  margin: 0 16px;
   text-align: left;
+}
+
+.school__name,
+.school__period {
   color: var(--color-light-grey);
 }
 
@@ -420,4 +424,30 @@ section {
 
 .testimonial__speech-bubble a {
   color: var(--color-pink);
+}
+
+/* Contact */
+#contact {
+  background-color: var(--color-pink);
+}
+
+.contact__title,
+.contact__email,
+.contact__links {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-yellow);
+  transition: all var(--animation-duration) ease-in;
 }
