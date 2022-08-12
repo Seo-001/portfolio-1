@@ -140,7 +140,12 @@ P {
   display: none;
 }
 
+* {
+  scroll-margin-top: 50px;
+}
+
 /* home */
+
 #Home {
   background: url(portfolio-imgs/home.png) center/cover no-repeat;
   padding: 40px;
