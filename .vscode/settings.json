@@ -1,3 +1,7 @@
 {
-  "terminal.explorerKind": "external"
+  "terminal.explorerKind": "external",
+  "editor.formatOnSave": true,
+  "prettier.jsxSingleQuote": false,
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single"
 }
