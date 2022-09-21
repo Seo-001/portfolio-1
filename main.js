@@ -77,12 +77,6 @@ workBtnContainer.addEventListener('click', (e) => {
     e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
   target.classList.add('selected');
 
-  // const active = document.querySelector('.category__btn.selected');
-  // if (active != null) {
-  //   active.classList.remove('selected');
-  // }
-  // e.target.classList.add('selected');
-
   projectContainer.classList.add('anim-out');
 
   setTimeout(() => {
